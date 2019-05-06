@@ -1,6 +1,5 @@
 #1/bin/bash
 cont_length=$(docker container ls -q)
-declare -a env_list
 window_size=($(tput cols))/2+20
 for container in $cont_length 
 do 
